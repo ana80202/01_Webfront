@@ -1,0 +1,103 @@
+/*
+CSS파일
+파일 전체가 <style>태그 내부라고 생각하면 됨
+*/
+
+h1 {
+    color: lightcoral;
+}
+/*기본 속성 선택자*/
+div[name="name-1"] {
+    background-color: blueviolet;
+}
+
+
+p [name = "name-1"] {
+    background-color: aquamarine;
+    
+}
+[name = "name-2"] {
+    background-color: aquamarine;
+    
+}
+
+/*자식 선택자*/
+
+#parent-ul> li{
+    background-color: blueviolet;
+}
+
+#parent-ul> li > span{
+    background-color: pink;
+}
+
+
+/*후손 선택자*/
+
+#test-div p {
+    background-color: dodgerblue;
+}
+
+/*반응 선택자*/
+.div-cls {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    
+    /*아래쪽 요소와의 간격*/
+    margin-bottom: 30px;
+
+    /*요소에 마우스 커서가 올라오면
+     손가락모양으로 변경*/
+    cursor: pointer;
+}
+
+#active-test:active {
+    background-color: chartreuse;
+}
+
+#hover-test:hover {
+    background-color: slateblue;
+    width: 230px;
+    height: 230px;
+}
+
+/*hover-test 요소가 변화를 일으키면 0.5초 동안 변해라*/
+#hover-test{
+    transition-duration: 0.5s;
+}
+
+#focus-test:focus {
+    background-color: cadetblue;
+}
+
+
+input[name=fruits]:checked{
+    width: 30px;
+    height: 30px;
+
+    background-color: wheat;
+    /*radio, checkbox 는 크기를 제외한 스타일 적용되지 않음*/
+}
+
+#test-div2 > input:enabled {
+    background-color: red;
+}
+
+#test-div2 > input:disabled {
+    background-color:pink;
+}
+
+
+/*동위 선택자*/
+#div1 + div{
+    background-color: olive;
+}
+
+#div3 ~ div {
+    background-color: aqua;
+}
+
+
+
