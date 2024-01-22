@@ -66,11 +66,19 @@ header > section:nth-of-type(4) {
   border: 2px solid #ddd;
   border-radius: 40px;
   padding: 2px;
+  margin: auto;
 
 
   display: flex;
-  
+ }
+
+.search-area input {
+    width: 450px;
 }
+
+
+
+
 
 #query {
     padding: 10px;
