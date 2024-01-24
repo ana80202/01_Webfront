@@ -115,8 +115,10 @@ function checkFn5() {
     console.log(`!false = ${!false}`) ;
 
     const bool6 = false;
-    console.log(!(bool6 != true)); //????
-    
+    console.log(!( bool6 != true)); //????
+            //  !(false! = true)
+            //  !(true)
+            //  false    
   
 
 }

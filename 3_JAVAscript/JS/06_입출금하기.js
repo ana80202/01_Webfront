@@ -51,7 +51,7 @@ function deposit() {
 
 
 
-//출금
+//출금  ???
 function withdrwal() {
 
     if(amount.value.length == 0){
@@ -65,7 +65,7 @@ function withdrwal() {
 
         } else {
             //비밀번호가 일치하지 않을 경우
-            if( password ! = '1234') {                           ///????
+            if( password != '1234') {                           ///????
                 alert("비밀번호가 일치하지 않습니다");
             } else {
                 //비밀번호가 일치하는 경우
@@ -79,7 +79,7 @@ function withdrwal() {
                     //balance = balance - money;
                     balance -= money;
                     output.innerText = balance;
-                    amount,value = ''; //input에 작성된 값 제거
+                    amount.value = ''; //input에 작성된 값 제거
 
                     alert(`${money}원이 출금되었습니다. 남은 잔액 ${balance}`);
 
@@ -90,3 +90,6 @@ function withdrwal() {
 
 
 }
+
+
+
