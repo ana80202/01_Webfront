@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+     margin: auto;
+     margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.size > input {
+    width: 80px;
+}
+
+.font > input {
+    width: 50px;
+
+}
+
+.textline > input {
+    width: 350px;
+}
+
+.w > div {
+    margin-right: 280px;
+}
+
+.h {
+    margin-right: 308px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
