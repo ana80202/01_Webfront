@@ -22,6 +22,33 @@
     <section id="result"></section>
 
     <script>
+        const tagName = document.getElementById("#tagName")
+        const tagInnerText = document.getElementById("#tagInnerText")
+        const colorName = document.getElementById("#colorName")
+        const result = document.getElementById("#result")
+
+    
+
+     
+        colorName.addEventListener( "keyup", function(e) {
+
+        if(e.key == "Enter") {
+       result.style.backgroundColor = colorName.value;
+        }
+       });
+
+
+       btn.addEventListener("click", function(e) {
+
+
+       console.log(e);
+
+     
+       document.getElementById("result").innerHTML = result;
+       });
+
+       
+    
     </script>
 </body>
 </html>
