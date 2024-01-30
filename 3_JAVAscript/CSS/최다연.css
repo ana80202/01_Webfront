@@ -1,0 +1,39 @@
+* {
+    
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 0;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#box-width {
+    width: 50px;
+}
+
+#box-height {
+    width: 50px;
+}
+
+#fs {
+    width: 50px;
+}
+
+#box-fob-color {
+    width: 50px;
+}
+
+#content {
+    width: 400px;
+}
+
+#apply-btn {
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 100px;
+}
