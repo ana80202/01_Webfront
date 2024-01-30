@@ -152,9 +152,9 @@ const numbers = [10, 20, 30];
 
 console.log("numbers : ", numbers, typeof numbers);
 
-console.log("numbers 배열 값 중 0번째 : ", numbers[0], typeof numbers[0]);
-console.log("numbers 배열 값 중 1번째 : ", numbers[1], typeof numbers[1]);
-console.log("numbers 배열 값 중 2번째 : ", numbers[2], typeof numbers[2]);
+console.log("numbers 배열 값 중 0번째 : ", numbers[0], typeof numbers[0]); //10
+console.log("numbers 배열 값 중 1번째 : ", numbers[1], typeof numbers[1]); //20
+console.log("numbers 배열 값 중 2번째 : ", numbers[2], typeof numbers[2]);  //30
 
 //2) JS 객체
 // 값을 K:V (Map) 형식으로 여러개 저장하는 형태
