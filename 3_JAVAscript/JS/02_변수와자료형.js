@@ -89,13 +89,13 @@ console.log("PI :" , PI);
 //.즉, 코드 블록 내부에서 선언한 변수는 지역 변수이다.
 
 // 블록 레벨 (let, const)
-let foo = 123; //전역변수
+let foo = 123; //전역변수 : 외부에 있는 변수
 {
-   let foo = 456; //지역 변수
+   let foo = 456; //지역 변수  : 내부에 있는 변수
    let bar = 456; //지역 변수
 }
 
-console.log(foo);
+console.log(foo); //123
 //console.log(bar);  //Uncaught ReferenceError: bar is not defined
 
 //함수 레벨 (var)

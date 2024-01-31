@@ -1,4 +1,5 @@
 
+
 //배열 선언 및 기초 사용법
 function check1() {
 
@@ -189,8 +190,8 @@ function check6() {
        arr[row] =[];
        //arr[0] =[]
        for(let col = 0; col < 5; col++) {
-        arr[row][col] = count; //row행 col옆에 count 대입
-        count += 2 //count를 2증가
+       arr[row][col] = count; //row행 col옆에 count 대입
+       count += 2 //count를 2증가
         //arr[0][0] = 2;
         //arr[0][1] = 4;
         //arr[0][2] = 6;

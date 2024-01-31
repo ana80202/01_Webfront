@@ -1,6 +1,7 @@
  //적용하기 버튼이 클릭 되었을 때
  const applyBtn = document.querySelector("#apply-btn");
- const box = document.querySelector("#box");
+
+ const box = document.querySelector("#box"); //?
 
  applyBtn.addEventListener("click", function () {
 
@@ -9,13 +10,13 @@
      const boxHeight = document.querySelector("#box-height");
      const fs = document.querySelector("#fs");
 
-     const fw = document.querySelector("[name='fw'] : checked ");   //체크 된 것만 가지고 오기
+     const fw = document.querySelector("[name='fw']:checked ");   //체크 된 것만 가지고 오기
 
      const fontColor = document.querySelector("#box-font-color");
      const bgColor = document.querySelector("#box-bg-color");
 
-     const row = document.querySelector("[name='align-row'] : checked ");
-     const col = document.querySelector("[name='align-col'] : checked ");
+     const row = document.querySelector("[name='align-row']:checked ");
+     const col = document.querySelector("[name='align-col']:checked ");
 
      const content = document.querySelector("#content");
      const box = document.querySelector("#box");
@@ -52,19 +53,17 @@
 
 
      //글자색
-     if(fs.value.trim().length > 0){
+     if(fontColor.value.trim().length > 0){
          
-         box.style.fontSize = fs.value + "px";
+         box.style.color = fontColor.value ;
      }
-
-
 
 
      
      //배경색
-     if(fs.value.trim().length > 0){
+     if(bgColor.value.trim().length > 0){
          
-         box.style.backgroungColor = fs.value + "px";         box.style.alighItems
+         box.style.backgroundColor = bgColor.value;      
      }
 
        
@@ -78,18 +77,20 @@
        //가로 정렬
     if(row != null){
         console.log(row);
-        box.style.alignItems = row.value;
+        box.style. textAlign = row.value;
 
     }
      
       //세로 정렬
     if(col != null){
         console.log(col);
-        box.style.alignItems = col.value;
+        box.style.   verticalAlign  = col.value;
     }
 
-    box.innerHTML
+ 
  })
+
+   
 
 
 

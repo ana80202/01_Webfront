@@ -99,7 +99,7 @@ function check5() {
     while( input  !== null) { 
 
         let t = 1;
-        let f = 
+
         
         input = prompt("숫자를 입력하세요!");
 
